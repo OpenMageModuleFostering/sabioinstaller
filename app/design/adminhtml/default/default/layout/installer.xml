@@ -1,0 +1,12 @@
+<layout>
+	<sabio_installer_extension_grid>
+		<reference name="content">
+			<block type="sabio_installer/adminhtml_extension" name="grid_container"/>
+		</reference>
+	</sabio_installer_extension_grid>
+	<sabio_installer_extension_form>
+		<reference name="content">
+			<block type="sabio_installer/adminhtml_extension_form" name="form_container"/>
+		</reference>
+	</sabio_installer_extension_form>
+</layout>

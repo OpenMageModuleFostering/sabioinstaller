@@ -1,0 +1,51 @@
+<config>
+	<acl>
+		<resources>
+			<admin>
+				<children>
+					<system>
+						<children>
+							<config>
+								<children>
+									<sabio_installer title="title">
+										<title>SABIOsystem Installer</title>
+										<sort_order>100</sort_order>
+									</sabio_installer>
+								</children>
+							</config>
+						</children>
+					</system>
+				</children>
+			</admin>
+		</resources>
+	</acl>
+	<menu>
+		<sabio>
+			<title>SABIOsystem</title>
+			<sort_order>90</sort_order>
+			<children>
+				<installer translate="title" module="sabio_installer">
+					<title>Installer</title>
+					<sort_order>0</sort_order>
+					<children>
+						<grid translate="title" module="sabio_installer">
+							<title>Extensions list</title>
+							<sort_order>100</sort_order>
+							<action>sabio_installer/extension/grid</action>
+						</grid>
+						<form translate="title" module="sabio_installer">
+							<title>Add new extension</title>
+							<sort_order>200</sort_order>
+							<action>sabio_installer/extension/form</action>
+						</form>
+						<config translate="title" module="sabio_installer">
+							<title>Configuration</title>
+							<sort_order>300</sort_order>
+							<action>adminhtml/system_config/edit/section/sabio_installer</action>
+						</config>
+					</children>
+				</installer>
+			</children>
+		</sabio>
+	</menu>
+</config>

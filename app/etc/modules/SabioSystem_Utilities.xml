@@ -1,0 +1,8 @@
+<config>
+    <modules>
+        <SabioSystem_Utilities>
+            <active>true</active>
+            <codePool>community</codePool>
+        </SabioSystem_Utilities>
+    </modules>
+</config>

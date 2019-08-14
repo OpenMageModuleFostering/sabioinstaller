@@ -1,0 +1,8 @@
+<config>
+	<tabs>
+		<sabio module="sabio_util">
+			<label>SabioSystem</label>
+			<sort_order>100</sort_order>
+		</sabio>
+	</tabs>
+</config>

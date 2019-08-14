@@ -1,0 +1,33 @@
+<config>
+	<modules>
+		<SabioSystem_Utilities>
+			<version>1.0.0</version>
+		</SabioSystem_Utilities>
+	</modules>
+	<global>
+		<helpers>
+			<sabio_util>
+				<class>SabioSystem_Utilities_Helper</class>
+			</sabio_util>
+		</helpers>
+		<blocks>
+			<sabio_util>
+				<class>SabioSystem_Utilities_Block</class>
+			</sabio_util>
+		</blocks>
+		<models>
+			<sabio_util>
+				<class>SabioSystem_Utilities_Model</class>
+			</sabio_util>
+		</models>
+	</global>
+	<adminhtml>
+		<layout>
+			<updates>
+				<sabio_util>
+					<file>sabio_util.xml</file>
+				</sabio_util>
+			</updates>
+		</layout>
+	</adminhtml>
+</config>

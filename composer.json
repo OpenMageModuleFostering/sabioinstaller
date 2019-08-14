@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/SABIOinstaller",
+    "type": "magento-module",
+    "license": "WTFPL",
+    "homepage": "",
+    "description": "Thanks to this app you will be able to install any of our extensions into your shop faster and a whole ton easier than in case of other suppliers.",
+    "authors": [
+    {
+        "name": "Patryk Grudniewski",
+        "email": "patryk.grudniewski@sabiosystem.com"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}

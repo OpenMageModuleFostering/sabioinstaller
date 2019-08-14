@@ -1,0 +1,49 @@
+<config>
+	<sections>
+		<sabio_installer translate="label" module="sabio_installer">
+			<label>Installer</label>
+			<tab>sabio</tab>
+			<frontend_type>text</frontend_type>
+			<sort_order>100</sort_order>
+			<show_in_default>1</show_in_default>
+			<show_in_website>0</show_in_website>
+			<show_in_store>0</show_in_store>
+			<groups>
+				<api_config translate="label" module="sabio_installer">
+					<label>API Configuration</label>
+					<frontend_type>text</frontend_type>
+					<sort_order>120</sort_order>
+					<show_in_default>1</show_in_default>
+					<show_in_website>0</show_in_website>
+					<show_in_store>0</show_in_store>
+					<fields>
+						<url translate="label" module="sabio_installer">
+							<label>URL</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>100</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>0</show_in_website>
+							<show_in_store>0</show_in_store>
+						</url>
+						<login translate="label" module="sabio_installer">
+							<label>Login</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>200</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>0</show_in_website>
+							<show_in_store>0</show_in_store>
+						</login>
+						<password translate="label" module="sabio_installer">
+							<label>Password</label>
+							<frontend_type>password</frontend_type>
+							<sort_order>300</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>0</show_in_website>
+							<show_in_store>0</show_in_store>
+						</password>
+					</fields>
+				</api_config>
+			</groups>
+		</sabio_installer>
+	</sections>
+</config>
