@@ -46,7 +46,7 @@ class SabioSystem_Installer_Block_Adminhtml_Extension_Grid extends Mage_Adminhtm
         $this->addColumn('action',
             array(
                 'header'    => $helper->__('Action'),
-                'width'     => '100px',
+                'width'     => '140px',
                 'type'      => 'action',
                 'getter'     => 'getId',
                 'actions'   => array(

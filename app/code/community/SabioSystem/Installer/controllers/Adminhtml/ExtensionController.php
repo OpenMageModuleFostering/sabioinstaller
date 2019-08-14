@@ -1,6 +1,10 @@
 <?php
 class SabioSystem_Installer_Adminhtml_ExtensionController extends Mage_Adminhtml_Controller_Action{
-	
+	protected function _getHelper()
+	{
+		return Mage::helper('sabio_installer');
+	}
+
 	public function gridAction()
 	{
 		
@@ -17,6 +21,7 @@ class SabioSystem_Installer_Adminhtml_ExtensionController extends Mage_Adminhtml
 		
 		$this->_getSession()->addSuccess($this->__('Extension id %s updated successfully',$id));
 		
+		$this->_getHelper()->clearCache();	
 		$this->_redirect('*/*/grid');
 		return;
 	}
@@ -36,6 +41,7 @@ class SabioSystem_Installer_Adminhtml_ExtensionController extends Mage_Adminhtml
 		
 		$this->_getSession()->addSuccess($this->__('Extension id %s installed successfully',$id));
 		
+		$this->_getHelper()->clearCache();	
 		$this->_redirect('*/*/grid');
 		return;
 	}
@@ -46,6 +52,7 @@ class SabioSystem_Installer_Adminhtml_ExtensionController extends Mage_Adminhtml
 		
 		$this->_getSession()->addSuccess($this->__('Extension id %s deleted successfully',$id));
 		
+		$this->_getHelper()->clearCache();	
 		$this->_redirect('*/*/grid');
 		return;
 	}
@@ -55,6 +62,7 @@ class SabioSystem_Installer_Adminhtml_ExtensionController extends Mage_Adminhtml
 		
 		$this->_getSession()->addSuccess($this->__('Extension id %s uninstalled successfully',$id));
 		
+		$this->_getHelper()->clearCache();	
 		$this->_redirect('*/*/grid');
 		return;
 	}
